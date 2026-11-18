@@ -175,12 +175,12 @@ Square, Void background, a single Lime or Coral geometric element (ring, bar, wa
 | Instagram | `@nulltone.wav` | appears available — confirm at signup | **Primary.** Bio, grid and captions in `instagram/instagram-kit.md` |
 | Instagram (backup) | `@nulltone.audio`, `@nulltone.mp3` | appear available | Use only if `.wav` is taken |
 | Instagram (taken) | `@nulltone`, `@nulltonemusic` | taken | Don't chase these |
-| Email | `nulltone@icloud.com` | live | Booking address, on the site and in every bio |
+| Email | `nulltone@icloud.com` | live | Booking address, on the site and in every bio. Paste-ready bios in `brand/bio-kit.md` |
 | Website | `nulltoneaudio.github.io` | live | Move to a real domain when you buy one — see below |
 | Domain | `nulltone.audio` / `nulltone.fm` | unregistered, available | `nulltoneaudio.com` is taken by someone else — do not use it |
-| SoundCloud | `nulltone` or `nulltoneaudio` | check | If `nulltone` is taken, use `nulltoneaudio` and keep it identical everywhere |
+| SoundCloud | `nulltoneaudio` | not live yet | Match the YouTube handle; if `nulltone` is free, take it and update this row |
 | Bandcamp | `nulltone` | check | |
-| YouTube | `@nulltone` | check | Full sets, clips |
+| YouTube | `@nulltoneaudio` | live | Full sets, clips — linked from the site |
 | TikTok | `@nulltone.wav` | check | Clip-first, same handle as IG |
 
 **Consistency rule:** display name is always `NULLTONE`. Handles carry a suffix only where forced, and it's the same suffix everywhere (`.wav`). Never mix `@nulltone.audio` on Instagram with `@nulltoneaudio` on SoundCloud.
