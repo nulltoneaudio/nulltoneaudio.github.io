@@ -138,7 +138,7 @@ One hard light source, black surroundings, gear in frame, no smiling at the came
 
 Shot list for the first session:
 1. Portrait, 4:5, side light, holding nothing
-2. Hands on the FLX4, top-down
+2. Hands on the decks, top-down
 3. Crowd from behind the booth, mid-set, motion blur
 4. Full rig wide shot with the mark on a sticker on the case
 5. A detail: RCA cable, cue button, filter knob
