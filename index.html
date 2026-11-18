@@ -4,15 +4,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>NULLTONE — DJ &amp; producer</title>
-<meta name="description" content="NULLTONE is Ethan Banker, a California DJ and producer. Low end first, sets built by hand. First release coming soon.">
+<meta name="description" content="NULLTONE is Ethan Banker, a California DJ and producer. Low end first, sets built by hand. Debut single in the works.">
 <meta property="og:title" content="NULLTONE — DJ &amp; producer">
-<meta property="og:description" content="Low end first. Sets built by hand. First release coming soon.">
+<meta property="og:description" content="Low end first. Sets built by hand. Debut single in the works.">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#08090A">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body id="top">
@@ -21,175 +21,184 @@
 
 <header class="site-header">
   <a class="brand" href="#top" aria-label="NULLTONE home">
-    <img src="assets/mark.svg" alt="" width="30" height="30">
-    <span class="brand-word">NULLTONE</span>
+    <img src="assets/mark.svg" alt="" width="26" height="26">
+    <span>NULLTONE</span>
   </a>
   <nav class="site-nav" aria-label="Primary">
     <a href="#music">Music</a>
     <a href="#shows">Shows</a>
     <a href="#about">About</a>
-    <a href="#booking">Booking</a>
+    <a href="#book">Book</a>
   </nav>
-  <a class="btn btn--ghost btn--sm" href="#booking">Book a set</a>
+  <a class="btn btn--solid btn--sm" href="mailto:nulltone@icloud.com?subject=Booking%20enquiry">Book a set</a>
 </header>
 
 <main id="main">
 
   <!-- HERO -->
   <section class="hero">
-    <div class="hero-copy">
-      <p class="eyebrow"><span class="dot" aria-hidden="true"></span> DJ · Producer · California</p>
-      <h1>Nothing sounds<br><em>like this.</em></h1>
-      <p class="lede">NULLTONE is Ethan Banker — a California DJ and producer. Low end first, tension before release, sets built by hand rather than by algorithm.</p>
-      <div class="cta-row">
-        <a class="btn btn--solid" href="#music">Hear the music</a>
-        <a class="btn btn--ghost" href="https://instagram.com/nulltone.wav" target="_blank" rel="noopener">Follow on Instagram</a>
-      </div>
-      <ul class="hero-facts">
-        <li><span>Sound</span>Low end, breaks, tension</li>
-        <li><span>Rig</span>rekordbox · DDJ-FLX4</li>
-        <li><span>Status</span>Booking now</li>
-      </ul>
+    <div class="hero-rule" aria-hidden="true"></div>
+
+    <div class="hero-top">
+      <p class="mono">DJ / Producer — California</p>
+      <p class="mono mono--live"><span class="dot" aria-hidden="true"></span> Booking now</p>
     </div>
 
-    <aside class="signal" aria-label="Current status">
-      <div class="signal-head">
-        <span class="mono">Live signal</span>
-        <span class="mono signal-amp" id="amp">—</span>
+    <h1 class="hero-wordmark" aria-label="NULLTONE">
+      <span aria-hidden="true">N</span><span aria-hidden="true">U</span><span aria-hidden="true">L</span><span aria-hidden="true">L</span><span aria-hidden="true" class="lit">T</span><span aria-hidden="true">O</span><span aria-hidden="true">N</span><span aria-hidden="true">E</span>
+    </h1>
+
+    <div class="hero-foot">
+      <p class="hero-tag">Nothing sounds<br>like this.</p>
+      <p class="hero-blurb">Bass-heavy records and sets built by hand. Debut single in the works.</p>
+      <div class="hero-actions">
+        <a class="btn btn--solid" href="#music">Hear the music</a>
+        <a class="btn" href="https://instagram.com/nulltone.wav" target="_blank" rel="noopener">Follow</a>
       </div>
-      <canvas id="scope" width="520" height="180" role="img"
-              aria-label="Animated waveform representing the NULLTONE signal"></canvas>
-      <dl class="signal-meta">
-        <div><dt>Latest</dt><dd>Debut single — in the works</dd></div>
-        <div><dt>Status</dt><dd><span class="dot dot--live" aria-hidden="true"></span>Open for bookings</dd></div>
-        <div><dt>Based</dt><dd>California, US</dd></div>
-      </dl>
-    </aside>
+    </div>
+
+    <div class="badge" aria-hidden="true">
+      <svg viewBox="0 0 120 120">
+        <defs><path id="badgePath" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/></defs>
+        <text><textPath href="#badgePath" startOffset="0">FIRST RELEASE · 2026 · NULLTONE · </textPath></text>
+      </svg>
+      <span class="badge-mark">NT</span>
+    </div>
+
+    <canvas id="scope" class="hero-scope" aria-hidden="true"></canvas>
   </section>
 
-  <div class="ticker" aria-hidden="true">
-    <div class="ticker-track">
-      <span>Selector</span><span>Producer</span><span>Low end</span><span>Harmonic</span>
-      <span>Built by hand</span><span>No filler</span><span>Open for bookings</span>
-      <span>Selector</span><span>Producer</span><span>Low end</span><span>Harmonic</span>
-      <span>Built by hand</span><span>No filler</span><span>Open for bookings</span>
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Low end first</span><span>Built by hand</span><span>Nothing sounds like this</span><span>California</span>
+      <span>Low end first</span><span>Built by hand</span><span>Nothing sounds like this</span><span>California</span>
+      <span>Low end first</span><span>Built by hand</span><span>Nothing sounds like this</span><span>California</span>
     </div>
   </div>
 
   <!-- MUSIC -->
   <section id="music" class="section">
     <header class="section-head">
-      <span class="mono section-num">01</span>
-      <div>
-        <h2>Music</h2>
-        <p>Records for the room, not the feed. Written low, played loud.</p>
-      </div>
-      <a class="link-arrow mono" href="https://soundcloud.com/" target="_blank" rel="noopener">SoundCloud →</a>
+      <span class="mono">01 — Music</span>
+      <h2>Out of<br>nothing.</h2>
     </header>
 
-    <!-- FIRST RELEASE: replace the title, copy, art and CTA when the track drops. -->
     <article class="feature">
-      <div class="feature-art art--1">
-        <span class="art-mark">NT</span>
-        <span class="mono art-label">Debut single</span>
+      <div class="feature-art" aria-hidden="true">
+        <span class="feature-num">001</span>
+        <span class="mono feature-label">Debut single</span>
       </div>
       <div class="feature-body">
-        <p class="mono feature-kicker">In the works</p>
-        <h3>The first NULLTONE record</h3>
-        <p>Built for the 3am slot: one idea, a kick you feel before you hear it, and nothing left in that isn't doing a job. Finishing it now.</p>
-        <p class="mono feature-note">Streaming links land here the day it's out.</p>
+        <p class="mono accent">In the works</p>
+        <h3>The first<br>NULLTONE record</h3>
+        <p>One idea, a kick you feel before you hear it, and nothing left in that isn't doing a job. Built for the last hour of the night.</p>
+        <p class="mono note">Released here first. Follow to hear it the day it lands.</p>
         <a class="btn btn--solid" href="https://instagram.com/nulltone.wav" target="_blank" rel="noopener">Follow for the drop</a>
       </div>
     </article>
+
+    <div class="grid-label">
+      <span class="mono">The archive</span>
+      <span class="mono">001 — 003</span>
+    </div>
+
+    <div class="tiles">
+      <article class="tile">
+        <div class="cover cover--1" aria-hidden="true"><span class="mono">001</span></div>
+        <div class="tile-body">
+          <h3>Single</h3>
+          <p class="mono">Coming soon</p>
+        </div>
+      </article>
+      <article class="tile">
+        <div class="cover cover--2" aria-hidden="true"><span class="mono">002</span></div>
+        <div class="tile-body">
+          <h3>Mix</h3>
+          <p class="mono">Coming soon</p>
+        </div>
+      </article>
+      <article class="tile">
+        <div class="cover cover--3" aria-hidden="true"><span class="mono">003</span></div>
+        <div class="tile-body">
+          <h3>Single</h3>
+          <p class="mono">Coming soon</p>
+        </div>
+      </article>
+    </div>
   </section>
 
   <!-- SHOWS -->
-  <section id="shows" class="section">
+  <section id="shows" class="section section--shows">
     <header class="section-head">
-      <span class="mono section-num">02</span>
-      <div>
-        <h2>Shows</h2>
-        <p>Clubs, warehouses, radio — anywhere with a monitoring system worth the trip.</p>
-      </div>
-      <a class="link-arrow mono" href="#booking">Book a set →</a>
+      <span class="mono">02 — Shows</span>
+      <h2>The room<br>is the point.</h2>
     </header>
 
-    <div class="shows reveal">
-      <div class="shows-empty">
-        <span class="mono">No dates announced</span>
-        <h3>The first run is being booked now.</h3>
-        <p>If you run a room and want a set built for it — not a playlist shuffled on the night — get in touch with the date, the room and the slot. I bring my own controller and a backup USB.</p>
-        <a class="btn btn--ghost btn--sm" href="mailto:nulltone@icloud.com?subject=Booking%20enquiry">Book a date</a>
+    <div class="dates">
+      <div class="dates-copy">
+        <p class="mono accent">No dates announced</p>
+        <p class="dates-big">First run<br>being booked.</p>
+        <p class="dates-note">Clubs, warehouses, radio — anywhere with a monitoring system worth the trip. Send the date, the room and the slot.</p>
+        <a class="btn btn--solid" href="mailto:nulltone@icloud.com?subject=Booking%20enquiry">Book a date</a>
       </div>
-
-      <!-- When dates exist, replace .shows-empty with rows like this, newest first:
-      <a class="show" href="TICKET_LINK">
-        <span class="mono show-date">Fri, Mar 14</span>
-        <span class="show-venue">Venue name</span>
-        <span class="show-city mono">City, ST</span>
-        <span class="mono show-tickets">Tickets ↗</span>
-      </a>
-      -->
+      <div class="dates-list" aria-hidden="true">
+        <span class="mono">Date</span>
+        <span class="mono">Venue</span>
+        <span class="mono">City</span>
+        <span class="mono">Tickets</span>
+      </div>
     </div>
   </section>
 
   <!-- ABOUT -->
   <section id="about" class="section">
     <header class="section-head">
-      <span class="mono section-num">03</span>
-      <div>
-        <h2>About</h2>
-        <p>Ethan Banker, California.</p>
-      </div>
+      <span class="mono">03 — About</span>
     </header>
 
-    <div class="about-grid reveal">
-      <div class="portrait" aria-hidden="true">
-        <span class="mono">Portrait · 4:5</span>
-      </div>
+    <p class="statement">I make music for the last hour of the night.</p>
+
+    <div class="about-body">
       <div class="about-copy">
-        <p class="about-lead">I make the music I want to hear at 3am.</p>
-        <p>I'm Ethan Banker, and I record and play as NULLTONE. I came up mixing by ear — matching keys, riding the low end, and learning that the best part of a set is usually the thing you leave out. That's still the whole method.</p>
-        <p>The records are built the same way: start from silence, add only what earns its place. Bass-heavy, deliberate, and made to be played on a system with headroom rather than a phone speaker.</p>
-        <dl class="about-facts">
-          <div><dt>Role</dt><dd>DJ · Producer</dd></div>
-          <div><dt>Sound</dt><dd>Low end, breaks, tension</dd></div>
-          <div><dt>Gear</dt><dd>rekordbox · DDJ-FLX4</dd></div>
-          <div><dt>Home</dt><dd>California, US</dd></div>
-        </dl>
-        <a class="link-arrow mono" href="https://instagram.com/nulltone.wav" target="_blank" rel="noopener">@nulltone.wav →</a>
+        <p>I'm Ethan Banker. I record and play as NULLTONE, out of California.</p>
+        <p>I came up mixing by ear — matching keys, riding the low end, learning that the best part of a set is usually the thing you leave out. The records are built the same way: start from silence, add only what earns its place.</p>
+        <p>Bass-heavy, deliberate, made for a system with headroom.</p>
+      </div>
+      <div class="portrait" aria-hidden="true">
+        <span class="mono">Portrait — 4:5</span>
       </div>
     </div>
+
+    <ul class="tags mono">
+      <li>California</li><li>Bass</li><li>Breaks</li><li>Low end</li><li>Harmonic</li><li>Live</li>
+    </ul>
   </section>
 
   <!-- BOOKING -->
-  <section id="booking" class="section section--contact">
+  <section id="book" class="section section--book">
     <header class="section-head">
-      <span class="mono section-num">04</span>
-      <div>
-        <h2>Bookings</h2>
-        <p>Send the date, the room and the set length and you'll get a plan back.</p>
-      </div>
+      <span class="mono">04 — Booking</span>
+      <h2>Say<br>hello.</h2>
     </header>
 
-    <a class="big-mail" href="mailto:nulltone@icloud.com">nulltone@icloud.com</a>
+    <a class="book-mail" href="mailto:nulltone@icloud.com">nulltone@icloud.com</a>
 
-    <div class="channels">
+    <div class="socials">
       <a href="https://instagram.com/nulltone.wav" target="_blank" rel="noopener"><span class="mono">Instagram</span><span>@nulltone.wav</span></a>
       <a href="https://soundcloud.com/" target="_blank" rel="noopener"><span class="mono">SoundCloud</span><span>/nulltone</span></a>
       <a href="https://youtube.com/" target="_blank" rel="noopener"><span class="mono">YouTube</span><span>@nulltone</span></a>
-      <a href="mailto:nulltone@icloud.com"><span class="mono">Email</span><span>nulltone@icloud.com</span></a>
+      <a href="https://tiktok.com/" target="_blank" rel="noopener"><span class="mono">TikTok</span><span>@nulltone.wav</span></a>
     </div>
   </section>
 </main>
 
 <footer class="site-footer">
-  <div class="footer-brand">
-    <img src="assets/mark.svg" alt="" width="24" height="24">
-    <span class="mono">NULLTONE</span>
+  <p class="footer-word" aria-hidden="true">NULLTONE</p>
+  <div class="footer-row">
+    <p class="mono">&copy; <span id="year">2026</span> Ethan Banker</p>
+    <p class="mono">California, US</p>
+    <a class="mono" href="#top">Back to top ↑</a>
   </div>
-  <p class="mono">Nothing sounds like this.</p>
-  <p class="mono">&copy; <span id="year">2026</span> Ethan Banker</p>
 </footer>
 
 <script src="script.js" defer></script>

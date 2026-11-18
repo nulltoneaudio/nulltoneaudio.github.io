@@ -1,6 +1,6 @@
 # NULLTONE — brand guide
 
-Version 2.0 · November 2026
+Version 3.0 · November 2026
 Owner: Ethan Banker
 
 ---
@@ -114,9 +114,10 @@ Lime is a spotlight, not a paint. If a layout has more than about one-tenth lime
 
 ### Type
 
-- **Display / body:** Space Grotesk. Headlines tight (`-0.03em` to `-0.045em`), sentence case, never all caps except the wordmark.
-- **Metadata / labels:** JetBrains Mono, 11px, `0.16em` tracking, uppercase — track titles, keys, BPM, dates, cities.
-- Fallbacks: the site ships with system stacks so it degrades cleanly offline.
+- **Display:** Anton, all caps, tight leading (0.84–0.88), near-zero tracking. This is the voice of the brand: posters, headlines, the wordmark. Never use it for body copy.
+- **Body:** Inter Tight, 400–600, sentence case, line height 1.5.
+- **Metadata / labels:** JetBrains Mono, 11px, `0.18em` tracking, uppercase — track titles, keys, BPM, dates, cities.
+- Fallbacks: system stacks so the site degrades cleanly offline.
 
 ### Layout
 
@@ -124,6 +125,8 @@ Lime is a spotlight, not a paint. If a layout has more than about one-tenth lime
 - Hairline rules at `rgba(237,233,227,0.14)`.
 - 12-column feel, generous margins, one idea per screen.
 - Numbers do the work: `01` `02` `03` section markers, BPM, key, show dates.
+- The wordmark is the layout. On the hero it spans the full viewport, one letter per column, with a single letter in Lime. Big type is the decoration; no illustration, no stock photography in the layout.
+- Full-bleed colour bands (the Lime marquee, the Void feature panel) separate sections. Corners stay square and edges run to the viewport.
 
 ### Motion
 
@@ -155,10 +158,10 @@ Square, Void background, a single Lime or Coral geometric element (ring, bar, wa
 > NULLTONE — Ethan Banker. California DJ and producer. Low end first, sets built by hand. Bookings: nulltone@icloud.com
 
 **Bio — press / 300 characters**
-> NULLTONE is Ethan Banker, a California DJ and producer. His records are built from the low end up — bass-heavy, deliberate, one idea per track — and his sets are assembled by ear, with keys and tempo matched by hand. He plays rekordbox on a DDJ-FLX4 and brings his own controller to every date.
+> NULLTONE is Ethan Banker, a California DJ and producer. His records are built from the low end up — bass-heavy, deliberate, one idea per track — and his sets are assembled by ear, with keys and tempo matched by hand rather than by playlist.
 
 **Boilerplate — long**
-> Ethan Banker records and performs as NULLTONE. Based in California, he works as a DJ and producer across bass-heavy club music, building sets by hand rather than by playlist. His records start from silence and add only what earns its place: weight in the low end, tension before release, nothing decorative. He plays rekordbox on a DDJ-FLX4, brings his own controller and a backup USB, and is currently finishing his first release.
+> Ethan Banker records and performs as NULLTONE. Based in California, he works as a DJ and producer across bass-heavy club music, building sets by hand rather than by playlist. His records start from silence and add only what earns its place: weight in the low end, tension before release, nothing decorative. He is currently finishing his first release.
 
 **Producer tag (spoken, for tracks)**
 > "nulltone."
@@ -212,6 +215,6 @@ Finish the first single. One idea, mixed on monitors and checked on a phone. Cov
 Post the clip, then the track, then the story behind it. Send it directly to ten DJs you rate and three radio shows before you post publicly. Do not wait for the algorithm.
 
 **Week 4 — the mix and the ask**
-Record a 45–60 minute set and publish it on SoundCloud and YouTube. Send the press kit to five promoters with the mix attached. Mention the software only if someone asks why the mixing sounds deliberate.
+Record a 45–60 minute set and publish it on SoundCloud and YouTube. Send the press kit to five promoters, mix attached — before you post it publicly, so they hear it first.
 
 **Measure:** saves, shares, SoundCloud plays, and replies to booking emails. Nothing else for the first month.

@@ -1,6 +1,6 @@
 # NULLTONE — Instagram kit
 
-Everything below is paste-ready. Replace the bracketed placeholders with real dates, venues and links before posting.
+Everything below is paste-ready. Replace the bracketed placeholders with real dates, venues and links before posting. The 90-day sequence this supports is in `strategy/launch-plan.md`.
 
 ---
 
@@ -62,10 +62,10 @@ Post right to left (row 1 is bottom-left), so the grid reads as three rows of th
 >
 > Caption: [TRACK TITLE] is out. [BPM], [KEY]. Built around [one honest production detail]. Play it on something with headroom. Link in bio. #nulltone
 
-**7 — Rig detail**
-> Image: top-down of the FLX4, cables visible, hard side light.
+**7 — Studio detail**
+> Image: desk in the dark, waveform on screen, monitors in frame.
 >
-> Caption: Current rig. rekordbox, a DDJ-FLX4 and a backup USB that has saved me twice. Nothing exotic — the setup you know beats the setup you bought.
+> Caption: Two hours in and the kick still isn't right. This is the part nobody posts.
 
 ### Row 2
 
@@ -117,8 +117,8 @@ Post right to left (row 1 is bottom-left), so the grid reads as three rows of th
 4. **Behind the track**
 > [N] versions, one kick that never worked, and a bassline I kept from the first take. Worth it. [TRACK] is out [DATE].
 
-5. **Gear**
-> Current rig: [controller], [laptop], [interface], [headphones]. Nothing exotic. The setup you know beats the setup you bought.
+5. **Session note**
+> [N] hours on one kick. Tried [N] versions. Kept the first one, as usual. [TRACK] out [DATE].
 
 6. **Release day**
 > [TRACK] is out. [BPM], [KEY]. First thing I've finished since [honest detail about your process]. Play it loud, or don't play it at all.
@@ -161,7 +161,7 @@ Format rules: 9:16, text in the top third and bottom third only (UI eats the res
 Instagram rewards relevance over volume — use **5 to 8**, never 30.
 
 **Core set (use on most posts)**
-`#nulltone #djmix #rekordbox #ddjflx4 #harmonicmixing #bedroomproducer #djlife`
+`#nulltone #djmix #bassmusic #harmonicmixing #bedroomproducer #djlife`
 
 **Genre sets — pick one that matches the actual track**
 
@@ -207,8 +207,8 @@ Open [MONTHS]. Happy to send a plan for [SPECIFIC NIGHT] if that's useful.
 | 5 | Post tile 4 (cover teaser) + story countdown to the release |
 | 6 | Release day: tile 5 clip, story with link sticker |
 | 8 | Post tile 6 (set announcement) |
-| 9 | Story: rig teardown, save to `STUDIO` |
-| 10 | Post tile 7 (rig detail) |
+| 9 | Story: studio session, save to `STUDIO` |
+| 10 | Post tile 7 (studio detail) |
 | 12 | Post tile 8 (release day) — pin it |
 | 13 | Story: poll — "which track next" |
 | 14 | Post tile 9 (type card) and pin it |
