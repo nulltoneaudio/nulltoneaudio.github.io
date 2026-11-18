@@ -1,0 +1,9 @@
+<svg viewBox="0 0 200 200"><defs><mask id="m4">
+<rect width="200" height="200" fill="#fff"/>
+<circle cx="100" cy="100" r="62" fill="none" stroke="#000" stroke-width="2.5"/>
+<circle cx="100" cy="100" r="50" fill="none" stroke="#000" stroke-width="2.5"/>
+<circle cx="100" cy="100" r="38" fill="none" stroke="#000" stroke-width="2.5"/>
+<circle cx="100" cy="100" r="24" fill="#000"/><circle cx="100" cy="100" r="7" fill="#fff"/>
+</mask></defs><g fill="#D8FF3E" mask="url(#m4)">
+<circle cx="100" cy="100" r="78"/>
+<path d="M162 22 L 172 30 L 150 58 L 141 51 Z"/></g></svg>

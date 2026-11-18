@@ -1,0 +1,8 @@
+<svg viewBox="0 0 200 200"><defs><mask id="m1">
+<rect width="200" height="200" fill="#fff"/>
+<circle cx="77" cy="98" r="21" fill="#000"/><circle cx="123" cy="98" r="21" fill="#000"/>
+<circle cx="77" cy="98" r="6" fill="#fff"/><circle cx="123" cy="98" r="6" fill="#fff"/>
+<path d="M58 142H76L85 128L94 156L103 134L111 150L118 142H142" fill="none" stroke="#000" stroke-width="10"/>
+</mask></defs><g fill="#D8FF3E" mask="url(#m1)">
+<path d="M56 56L44 16L88 44Z"/><path d="M144 56L156 16L112 44Z"/>
+<rect x="40" y="52" width="120" height="126" rx="20"/></g></svg>

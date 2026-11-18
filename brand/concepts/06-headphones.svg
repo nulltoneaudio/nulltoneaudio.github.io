@@ -1,0 +1,8 @@
+<svg viewBox="0 0 200 200"><defs><mask id="m6">
+<rect width="200" height="200" fill="#fff"/>
+<circle cx="82" cy="106" r="11" fill="#000"/><circle cx="118" cy="106" r="11" fill="#000"/>
+<rect x="84" y="134" width="32" height="8" rx="4" fill="#000"/>
+</mask></defs><g fill="#D8FF3E" mask="url(#m6)">
+<path d="M40 98 A 60 60 0 0 1 160 98" fill="none" stroke="#D8FF3E" stroke-width="16" stroke-linecap="round"/>
+<rect x="28" y="88" width="28" height="58" rx="13"/><rect x="144" y="88" width="28" height="58" rx="13"/>
+<circle cx="100" cy="112" r="54"/></g></svg>
