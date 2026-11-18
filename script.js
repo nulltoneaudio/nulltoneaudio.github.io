@@ -19,7 +19,7 @@
   }
 
   // Reveal sections on approach
-  var targets = document.querySelectorAll(".section-head, .release, .tool, .about-grid, .big-mail, .channels");
+  var targets = document.querySelectorAll(".section-head, .feature, .shows, .about-grid, .big-mail, .channels");
   targets.forEach(function (el) { el.classList.add("reveal"); });
 
   if ("IntersectionObserver" in window && !reduceMotion) {
