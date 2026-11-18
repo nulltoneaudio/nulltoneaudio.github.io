@@ -88,15 +88,17 @@ Straight, specific, a little dry. You're a person who measures things, not a per
 
 ### The mark
 
-A ring cut by a signal. The ring is the null — a zero, an empty channel, a speaker cone at rest. The waveform running through it is the tone. It should read at 24px and at 8 feet.
+A speaker cabinet with a face. Square head, two horn ears, two driver eyes and a waveform mouth — a little character that reads as music hardware before it reads as a mascot. This is the archetype of the great dance-music logos (Monstercat's cat head, the deadmau5 mouse head): a flat silhouette with a face you can recognise at a glance and print on a hat.
 
-Files: `assets/mark.svg` (full), `assets/favicon.svg` (simplified).
+Ours deliberately uses a square cabinet and angular horns rather than a round animal head. It should never be described as a mouse, and never gain round ears — that shape is taken.
+
+Files: `assets/mark.svg` (full), `assets/favicon.svg` (silhouette + eyes), `assets/avatar.svg` / `assets/avatar-1000.png` (social avatar).
 
 **Rules**
 
 - Clear space: at least half the ring's diameter on all sides.
 - Minimum size: 24px digital, 8mm print.
-- On light backgrounds, swap the green stroke to `#08090A` and keep the black tile.
+- On light backgrounds the glyph stays Lime; never outline it or add a second colour.
 - Never rotate, add a gradient, outline it in a second colour, or place it on a busy photo without a solid tile behind it.
 - The mark and the wordmark are set side by side, never stacked, never overlapping.
 

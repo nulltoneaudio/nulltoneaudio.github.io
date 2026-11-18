@@ -75,26 +75,30 @@ function init() {
       "void main() {",
       "  vec2 uv = vUv;",
       "  vec2 p = (uv - 0.5) * vec2(uRes.x / uRes.y, 1.0);",
-      "  float t = uTime * 0.11;",
-      "  vec2 m = uMouse * 0.32;",
+      "  float t = uTime * 0.14;",
+      "  vec2 m = uMouse * 0.26;",
 
-      "  vec2 q = p * 1.9 + m;",
-      "  float w = fbm(q + vec2(t, -t * 0.8));",
-      "  float w2 = fbm(q * 1.8 + vec2(-t * 0.6, t * 0.5) + w * 1.7);",
+      // domain warp: two passes of noise bending each other
+      "  vec2 q = p * 2.1 + m;",
+      "  float n1 = fbm(q + vec2(t * 0.7, -t * 0.5));",
+      "  float n2 = fbm(q * 1.85 + n1 * 1.5 + vec2(-t * 0.45, t * 0.6));",
 
-      "  float r = length(p - m * 0.7);",
-      "  float rings = sin(r * 26.0 - t * 6.0 + w2 * 9.0);",
-      "  rings = smoothstep(0.62, 1.0, rings);",
-      "  float glow = exp(-r * 2.5);",
+      // fine topographic rings, displaced by the warp
+      "  float r = length(p - m * 0.5);",
+      "  float rings = sin((r + n2 * 0.26) * 46.0 - t * 3.4);",
+      "  rings = smoothstep(0.66, 1.0, rings);",
+      "  float flow = smoothstep(0.35, 0.95, sin(n1 * 9.0 + t * 1.5) * 0.5 + 0.5);",
+      "  float mask = smoothstep(0.92, 0.12, r);",
 
       "  vec3 lime = vec3(0.847, 1.0, 0.243);",
       "  vec3 coral = vec3(1.0, 0.416, 0.239);",
       "  vec3 base = vec3(0.031, 0.035, 0.039);",
 
       "  vec3 col = base;",
-      "  col += lime * (rings * 0.42 * glow + w2 * 0.11);",
-      "  col += coral * (0.07 * w * glow);",
-      "  col *= 0.9 + 0.1 * sin(uv.y * uRes.y * 1.1);",
+      "  col += lime * (rings * (0.14 + 0.34 * flow) * mask);",
+      "  col += lime * (0.05 * smoothstep(0.6, 0.0, r));",
+      "  col += coral * (0.07 * n2 * mask);",
+      "  col *= 0.88 + 0.12 * sin(uv.y * uRes.y * 0.9);",
 
       "  gl_FragColor = vec4(col, 1.0);",
       "}"
@@ -113,14 +117,12 @@ function init() {
   var target = { x: 0, y: 0 };
   var current = { x: 0, y: 0 };
 
-  function pointer(event) {
+  window.addEventListener("pointermove", function (event) {
     target.x = (event.clientX / window.innerWidth) * 2 - 1;
     target.y = -((event.clientY / window.innerHeight) * 2 - 1);
-  }
+  }, { passive: true });
 
-  window.addEventListener("pointermove", pointer, { passive: true });
   window.addEventListener("resize", resize);
-
   if ("ResizeObserver" in window) new ResizeObserver(resize).observe(canvas);
   resize();
 
@@ -144,8 +146,7 @@ function init() {
 
   function loop() {
     frame = requestAnimationFrame(loop);
-    if (!visible) return;
-    draw();
+    if (visible) draw();
   }
 
   if (reduceMotion) {

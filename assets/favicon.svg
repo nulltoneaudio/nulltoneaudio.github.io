@@ -1,5 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="NULLTONE">
-  <rect width="64" height="64" rx="12" fill="#08090A"/>
-  <path d="M4 32h13l4-11 8 22 6-15 4 4h21" fill="none" stroke="#D8FF3E" stroke-width="5"
-        stroke-linecap="round" stroke-linejoin="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="NULLTONE">
+  <defs>
+    <mask id="nt-fav">
+      <rect width="200" height="200" fill="#fff"/>
+      <circle cx="77" cy="98" r="21" fill="#000"/>
+      <circle cx="123" cy="98" r="21" fill="#000"/>
+    </mask>
+  </defs>
+  <g fill="#D8FF3E" mask="url(#nt-fav)">
+    <path d="M56 56 L 44 16 L 88 44 Z"/>
+    <path d="M144 56 L 156 16 L 112 44 Z"/>
+    <rect x="40" y="52" width="120" height="126" rx="20"/>
+  </g>
 </svg>

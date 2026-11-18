@@ -1,31 +1,33 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-label="NULLTONE avatar">
   <defs>
-    <radialGradient id="bg" cx="50%" cy="42%" r="70%">
-      <stop offset="0%" stop-color="#14181a"/>
+    <radialGradient id="nt-bg" cx="50%" cy="38%" r="72%">
+      <stop offset="0%" stop-color="#15191b"/>
       <stop offset="100%" stop-color="#08090a"/>
     </radialGradient>
-    <clipPath id="ring">
-      <circle cx="500" cy="500" r="292"/>
-    </clipPath>
+    <mask id="nt-avatar-face">
+      <rect width="1000" height="1000" fill="#fff"/>
+      <circle cx="385" cy="490" r="105" fill="#000"/>
+      <circle cx="615" cy="490" r="105" fill="#000"/>
+      <circle cx="385" cy="490" r="30" fill="#fff"/>
+      <circle cx="615" cy="490" r="30" fill="#fff"/>
+      <path d="M290 710 H 380 L 425 640 L 470 780 L 515 670 L 555 750 L 590 710 H 710"
+            fill="none" stroke="#000" stroke-width="50" stroke-linecap="square" stroke-linejoin="miter"/>
+    </mask>
   </defs>
 
   <rect width="1000" height="1000" fill="#08090A"/>
-  <rect width="1000" height="1000" fill="url(#bg)"/>
+  <rect width="1000" height="1000" fill="url(#nt-bg)"/>
 
-  <!-- ring: the null -->
-  <circle cx="500" cy="500" r="292" fill="none" stroke="#D8FF3E" stroke-width="34"/>
-
-  <!-- signal: the tone, clipped to the ring -->
-  <g clip-path="url(#ring)">
-    <path d="M150 500 H 322 L 360 402 L 404 604 L 446 452 L 486 548 L 522 500 H 850"
-          fill="none" stroke="#EDE9E3" stroke-width="22" stroke-linecap="square" stroke-linejoin="miter"/>
+  <g fill="#D8FF3E" mask="url(#nt-avatar-face)">
+    <path d="M280 300 L 220 80 L 440 220 Z"/>
+    <path d="M720 300 L 780 80 L 560 220 Z"/>
+    <rect x="200" y="260" width="600" height="630" rx="100"/>
   </g>
 
-  <!-- corner ticks -->
   <g fill="#8E8E86">
-    <rect x="180" y="176" width="26" height="4"/>
-    <rect x="794" y="176" width="26" height="4"/>
-    <rect x="180" y="820" width="26" height="4"/>
-    <rect x="794" y="820" width="26" height="4"/>
+    <rect x="120" y="120" width="34" height="5"/>
+    <rect x="846" y="120" width="34" height="5"/>
+    <rect x="120" y="875" width="34" height="5"/>
+    <rect x="846" y="875" width="34" height="5"/>
   </g>
 </svg>
