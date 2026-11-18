@@ -182,7 +182,8 @@ Square, Void background, a single Lime or Coral geometric element (ring, bar, wa
 | Email | `nulltone@icloud.com` | live | Booking address, on the site and in every bio. Paste-ready bios in `brand/bio-kit.md` |
 | Website | `nulltoneaudio.github.io` | live | Move to a real domain when you buy one — see below |
 | Domain | `nulltone.audio` / `nulltone.fm` | unregistered, available | `nulltoneaudio.com` is taken by someone else — do not use it |
-| SoundCloud | `nulltoneaudio` | not live yet | Match the YouTube handle; if `nulltone` is free, take it and update this row |
+| SoundCloud | `nulltoneaudio` | live | The public home for finished tracks — linked from the site |
+| [untitled] | `nulltoneaudio` | private | Unreleased and work-in-progress only; share a project link, never a profile |
 | Bandcamp | `nulltone` | check | |
 | YouTube | `@nulltoneaudio` | live | Full sets, clips — linked from the site |
 | TikTok | `@nulltone.wav` | check | Clip-first, same handle as IG |
@@ -219,6 +220,6 @@ Finish the first single. One idea, mixed on monitors and checked on a phone. Cov
 Post the clip, then the track, then the story behind it. Send it directly to ten DJs you rate and three radio shows before you post publicly. Do not wait for the algorithm.
 
 **Week 4 — the mix and the ask**
-Record a 45–60 minute set and publish it on SoundCloud and YouTube. Send the press kit to five promoters, mix attached — before you post it publicly, so they hear it first.
+Record a 45–60 minute set and publish it on SoundCloud and YouTube. Send the press kit to five promoters, mix attached — before you post it publicly, so they hear it first. Anything unreleased goes as a private [untitled] project link, not a public upload.
 
 **Measure:** saves, shares, SoundCloud plays, and replies to booking emails. Nothing else for the first month.

@@ -40,7 +40,7 @@ Tuning lives in the fragment shader: `t = uTime * 0.11` sets speed, `r * 26.0` s
 ## Before it goes public — replace these
 
 1. **Hero copy** — the blurb says the first single is finishing; update it the day the track is out.
-2. **Listen cards** — YouTube and Instagram point at the real accounts. Add a SoundCloud card once that profile exists (`.listen` is a 3-up grid).
+2. **Listen cards** — SoundCloud, YouTube and Instagram point at the real accounts, booking is the fourth (`.listen` is a 4-up grid that folds to 2 and 1).
 3. **About** — two short paragraphs; the avatar doubles as the mark. Swap in a portrait only if it's better than the avatar at 120px.
 4. **Metadata** — add `assets/og.png` (1200×630) and an `og:image` tag, and set `og:url` once a domain is live.
 5. **Domain** — served from `nulltoneaudio.github.io`. `nulltoneaudio.com` belongs to someone else; `nulltone.audio` and `nulltone.fm` are unregistered.

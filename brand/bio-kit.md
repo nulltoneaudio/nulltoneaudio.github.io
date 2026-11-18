@@ -27,7 +27,8 @@ Rules:
 | YouTube | `@nulltoneaudio` | `https://youtube.com/@nulltoneaudio` |
 | Email | `nulltone@icloud.com` | `mailto:nulltone@icloud.com` |
 | Website | — | `https://nulltoneaudio.github.io` |
-| SoundCloud | not live yet | claim `nulltone` or `nulltoneaudio`, match the others |
+| SoundCloud | `nulltoneaudio` | `https://soundcloud.com/nulltoneaudio` |
+| [untitled] | `nulltoneaudio` | private — send project links, not a public profile |
 
 ---
 
@@ -78,7 +79,7 @@ Site: nulltoneaudio.github.io
 
 ---
 
-## SoundCloud (when it's live)
+## SoundCloud
 
 **Display name:** `NULLTONE`
 
