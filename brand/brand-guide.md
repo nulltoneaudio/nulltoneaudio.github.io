@@ -1,7 +1,7 @@
 # NULLTONE — brand guide
 
 Version 3.1 · November 2026
-Owner: Ethan Banker
+Owner: NULLTONE
 
 ---
 
@@ -40,7 +40,7 @@ The name is the thesis: you start from nothing and make pressure out of it. It r
 ## 2. Positioning
 
 **Positioning statement**
-NULLTONE is the alias of Ethan Banker, a California DJ and producer making bass-heavy records and hand-built sets.
+NULLTONE is a California DJ and producer making bass-heavy records and hand-built sets.
 
 **One-liner**
 California DJ and producer. Low end first.
@@ -159,13 +159,13 @@ Square, Void background, a single Lime or Coral geometric element (ring, bar, wa
 > California DJ and producer.
 
 **Bio — 150 characters**
-> NULLTONE — Ethan Banker. California DJ and producer. Low end first, sets built by hand. Bookings: nulltone@icloud.com
+> NULLTONE — California DJ and producer. Low end first, sets built by hand. Bookings: nulltone@icloud.com
 
 **Bio — press / 300 characters**
-> NULLTONE is Ethan Banker, a California DJ and producer. His records are built from the low end up — bass-heavy, deliberate, one idea per track — and his sets are assembled by ear, with keys and tempo matched by hand rather than by playlist.
+> NULLTONE is a California DJ and producer. His records are built from the low end up — bass-heavy, deliberate, one idea per track — and his sets are assembled by ear, with keys and tempo matched by hand rather than by playlist.
 
 **Boilerplate — long**
-> Ethan Banker records and performs as NULLTONE. Based in California, he works as a DJ and producer across bass-heavy club music, building sets by hand rather than by playlist. His records start from silence and add only what earns its place: weight in the low end, tension before release, nothing decorative. He is currently finishing his first release.
+> NULLTONE is a California DJ and producer working across bass-heavy club music, building sets by hand rather than by playlist. His records start from silence and add only what earns its place: weight in the low end, tension before release, nothing decorative. He is currently finishing his first release.
 
 **Producer tag (spoken, for tracks)**
 > "nulltone."

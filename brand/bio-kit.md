@@ -65,7 +65,7 @@ California DJ and producer. Bass-heavy records, sets built by hand. New music an
 
 **Full description:**
 ```
-NULLTONE is Ethan Banker, a California DJ and producer.
+NULLTONE is a California DJ and producer.
 
 Low end first: records built from the kick and the sub up, and sets assembled by ear rather than by playlist. This channel is where the music lands first — singles, full mixes and clips from the room.
 
@@ -73,7 +73,7 @@ Booking: nulltone@icloud.com
 Instagram: instagram.com/nulltone.wav
 Site: nulltoneaudio.github.io
 
-© Ethan Banker
+© NULLTONE
 ```
 
 ---
@@ -105,12 +105,12 @@ California DJ. Low end first.
 
 **150 characters**
 ```
-NULLTONE — Ethan Banker. California DJ and producer. Low end first, sets built by hand. Bookings: nulltone@icloud.com
+NULLTONE — California DJ and producer. Low end first, sets built by hand. Bookings: nulltone@icloud.com
 ```
 
 **300 characters**
 ```
-NULLTONE is Ethan Banker, a California DJ and producer. His records are built from the low end up — bass-heavy, deliberate, one idea per track — and his sets are assembled by ear, with keys and tempo matched by hand rather than by playlist. Debut single finishing now.
+NULLTONE is a California DJ and producer. His records are built from the low end up — bass-heavy, deliberate, one idea per track — and his sets are assembled by ear, with keys and tempo matched by hand rather than by playlist. Debut single finishing now.
 ```
 
 **One-liner for flyers and lineups**

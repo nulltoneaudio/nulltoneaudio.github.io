@@ -1,6 +1,6 @@
 # NULLTONE
 
-Music brand site for Ethan Banker — DJ and producer, California.
+Music brand site for NULLTONE — DJ and producer, California.
 
 **Live: https://nulltoneaudio.github.io/**
 

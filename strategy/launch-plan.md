@@ -86,7 +86,7 @@ Two tracks out this year, both self-released: [LINK]
 If you've got an opener slot or a support date coming up, I'd love to be
 considered. Happy to send a full plan for the night.
 
-— Ethan / NULLTONE
+— NULLTONE
 nulltone@icloud.com
 ```
 

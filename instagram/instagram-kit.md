@@ -89,7 +89,7 @@ Post right to left (row 1 is bottom-left), so the grid reads as three rows of th
 **3 — Portrait**
 > Image: portrait, 4:5, side light.
 >
-> Caption: Ethan. California. I DJ, I produce, and if the low end isn't right, nothing else matters.
+> Caption: NULLTONE. California. I DJ, I produce, and if the low end isn't right, nothing else matters.
 
 **2 — Process**
 > Image: studio desk in the dark, waveform on screen, monitors in frame.
