@@ -24,29 +24,29 @@ No dependencies, no build step. Fonts load from Google Fonts with system fallbac
 ## Before it goes public — replace these
 
 1. **Releases** — `index.html`, the three `<article class="release">` blocks. Titles, year, BPM/key and the Spotify/Bandcamp links are placeholders. Swap the `.art--1/2/3` gradient classes for cover images when you have them (`<img src="assets/cover-x.jpg" alt="">`).
-2. **Booking email** — `hello@nulltoneaudio.com` appears twice: the big link in `#contact` and in `brand/brand-guide.md`.
+2. **Booking email** — `hello@nulltoneaudio.com` appears twice: the big link in `#contact` and in `brand/brand-guide.md`. Caveat: `nulltoneaudio.com` is registered to someone else (parked, no mail), so this address does not deliver. Swap it once a domain is actually yours.
 3. **Social links** — the `.channels` block and the "All releases" link point at Instagram, SoundCloud, GitHub and YouTube. SoundCloud and YouTube are bare `https://soundcloud.com/` placeholders.
 4. **Portrait** — the `.portrait` div in `#about` is a styled placeholder; replace it with `<img src="assets/portrait.jpg" alt="Ethan Banker, NULLTONE">` and keep the 4:5 ratio.
 5. **Metadata** — add `assets/og.png` (1200×630) and an `og:image` tag for link previews, and set `og:url` once the domain is live.
 
 ## Deploy
 
-Live on GitHub Pages: **https://ethanbanker.github.io/nulltone/**
+Live on GitHub Pages: **https://nulltoneaudio.github.io/**
 
-Repo: `github.com/ethanbanker/nulltone`, Pages serving `main` from the repo root. There is no build step — what's in the repo is what ships, so publishing an update is just:
+Canonical repo: `github.com/nulltoneaudio/nulltoneaudio.github.io`, Pages serving `main` from the repo root. There are two remotes: `brand` (the org repo, canonical) and `origin` (an earlier copy at `ethanbanker/nulltone`). Push to both to keep them identical. There is no build step — what's in the repo is what ships, so publishing an update is just:
 
 ```bash
-git add -A && git commit -m "copy tweak" && git push
+git add -A && git commit -m "copy tweak" && git push brand main && git push origin main
 ```
 
 Pages rebuilds in about a minute.
 
 ### Custom domain
 
-When `nulltoneaudio.com` is registered, add a file named `CNAME` at the repo root containing only the domain, then point DNS at GitHub:
+Once you own a domain, add a file named `CNAME` at the repo root containing only the domain, then point DNS at GitHub:
 
 - `A` records for `@`: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
-- `CNAME` for `www`: `ethanbanker.github.io`
+- `CNAME` for `www`: `nulltoneaudio.github.io`
 
 Set the domain under Settings → Pages and tick **Enforce HTTPS**. Once that resolves, update the `og:url` tag and the `mailto:` address if you set up email on the domain.
 
