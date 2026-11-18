@@ -69,7 +69,8 @@ Set the domain under Settings → Pages and tick **Enforce HTTPS**. Then update 
 ## House rules for the brand
 
 - Display name is always `NULLTONE`, all caps. `nulltone` only in handles and URLs.
-- Lime is a spotlight — the shader glow, one accent, the avatar ring. Never a page background.
+- Lime is a spotlight — the shader glow, one accent, the mascot's shell. Never a page background.
+- The mascot is a speaker cabinet, never a mouse: square head, horn ears. No round ears, no animal head.
 - Big type is the decoration. No stock photos, no illustration, no gradients beyond the release art and the hero.
 - One idea per screen. Numbers over adjectives.
 - The music leads. Gear, software and side projects never appear in copy unless someone asks.
