@@ -13,7 +13,7 @@ Everything below is paste-ready. Replace the bracketed placeholders with real da
 | Category | Musician/Band |
 | Account type | Professional (Creator) — gives you Insights |
 | Link | `https://nulltoneaudio.github.io` |
-| Avatar | Mascot on Void, 1000×1000, head at ~62% of the frame (`assets/avatar-1000.png`) |
+| Avatar | Mascot on Void, 1000×1000, mark at ~66% of the frame (`assets/avatar-1000.png`) |
 | Contact | `nulltone@icloud.com`, button: Email |
 
 **Bio (option A — primary, 141 characters)**

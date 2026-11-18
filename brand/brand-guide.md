@@ -1,6 +1,6 @@
 # NULLTONE — brand guide
 
-Version 3.0 · November 2026
+Version 3.1 · November 2026
 Owner: Ethan Banker
 
 ---
@@ -88,16 +88,18 @@ Straight, specific, a little dry. You're a person who measures things, not a per
 
 ### The mark
 
-A speaker cabinet with a face. Square head, two horn ears, two driver eyes and a waveform mouth — a little character that reads as music hardware before it reads as a mascot. This is the archetype of the great dance-music logos (Monstercat's cat head, the deadmau5 mouse head): a flat silhouette with a face you can recognise at a glance and print on a hat.
+A dome head under a four-spike mohawk crest, with one wide visor slot and a small mouth slot. No eyes — the visor does the work, so it reads as a masked DJ before it reads as a cartoon. This is the archetype of the great dance-music logos (Monstercat's cat head, the deadmau5 mouse head): a flat silhouette with a face you can recognise at a glance and print on a hat.
 
-Ours deliberately uses a square cabinet and angular horns rather than a round animal head. It should never be described as a mouse, and never gain round ears — that shape is taken.
+Ours is concept 07 from the icon set — chosen from ten. What makes it work is that the crest tips clear the dome by 20–26px: the hair reads as hair at 200px and as a spiked crown at 16px. Nothing else in the silhouette is optional, so it never gets busier.
 
-Files: `assets/mark.svg` (full), `assets/favicon.svg` (silhouette + eyes), `assets/avatar.svg` / `assets/avatar-1000.png` (social avatar).
+It should never be described as a mouse and never gain round ears — that shape is taken.
+
+Files: `assets/mark.svg` (full), `assets/favicon.svg` (same mark, visor enlarged for small sizes), `assets/avatar.svg` / `assets/avatar-1000.png` (social avatar).
 
 **Rules**
 
-- Clear space: at least half the ring's diameter on all sides.
-- Minimum size: 24px digital, 8mm print.
+- Clear space: at least half the head's diameter on all sides.
+- Minimum size: 24px digital, 8mm print. Below 24px use the favicon file, which thickens the visor.
 - On light backgrounds the glyph stays Lime; never outline it or add a second colour.
 - Never rotate, add a gradient, outline it in a second colour, or place it on a busy photo without a solid tile behind it.
 - The mark and the wordmark are set side by side, never stacked, never overlapping.

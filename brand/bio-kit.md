@@ -13,8 +13,8 @@ The pieces you paste into every account. Keep them identical in structure; only 
 
 Rules:
 - Display name is always `NULLTONE`, never "Nulltone" or "NULL TONE".
-- Upload the 1000px PNG as-is. Instagram crops to a circle — the head and horns sit inside the safe zone, so nothing important is lost.
-- Never place the avatar on a coloured background, never add a face or a photo over it, never recolour the ring off Lime.
+- Upload the 1000px PNG as-is. Instagram crops to a circle — the crest and the whole head sit inside the safe zone, so nothing important is lost.
+- Never place the avatar on a coloured background, never add a face or a photo over it, never recolour the mark off Lime.
 - One avatar across every platform. If two accounts show different pictures, the brand reads as two people.
 
 ---

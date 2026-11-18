@@ -11,8 +11,8 @@ index.html              hero, listen, about, booking
 styles.css              Anton display type, spacing system, listen cards
 gl.js                   Three.js shader hero — pointer-warped signal, no build step
 script.js               header state, scroll reveal, footer year
-assets/mark.svg         ring + waveform mark
-assets/favicon.svg      simplified mark for the browser tab
+assets/mark.svg         mohawk mark (07), visor + mouth slots
+assets/favicon.svg      same mark, visor enlarged for the browser tab
 assets/avatar.svg       avatar master (1000px canvas)
 assets/avatar-1000.png  upload-ready avatar for Instagram / YouTube / SoundCloud
 brand/brand-guide.md    name, positioning, voice, visuals, bios, 30-day plan
@@ -70,7 +70,7 @@ Set the domain under Settings → Pages and tick **Enforce HTTPS**. Then update 
 
 - Display name is always `NULLTONE`, all caps. `nulltone` only in handles and URLs.
 - Lime is a spotlight — the shader glow, one accent, the mascot's shell. Never a page background.
-- The mascot is a speaker cabinet, never a mouse: square head, horn ears. No round ears, no animal head.
+- The mascot is a crested, visored head, never a mouse: dome head, four-spike mohawk, one visor slot. No round ears, no animal head.
 - Big type is the decoration. No stock photos, no illustration, no gradients beyond the release art and the hero.
 - One idea per screen. Numbers over adjectives.
 - The music leads. Gear, software and side projects never appear in copy unless someone asks.

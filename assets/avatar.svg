@@ -1,17 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-label="NULLTONE avatar">
   <defs>
-    <radialGradient id="nt-bg" cx="50%" cy="38%" r="72%">
+    <radialGradient id="nt-bg" cx="50%" cy="36%" r="72%">
       <stop offset="0%" stop-color="#15191b"/>
       <stop offset="100%" stop-color="#08090a"/>
     </radialGradient>
     <mask id="nt-avatar-face">
       <rect width="1000" height="1000" fill="#fff"/>
-      <circle cx="385" cy="490" r="105" fill="#000"/>
-      <circle cx="615" cy="490" r="105" fill="#000"/>
-      <circle cx="385" cy="490" r="30" fill="#fff"/>
-      <circle cx="615" cy="490" r="30" fill="#fff"/>
-      <path d="M290 710 H 380 L 425 640 L 470 780 L 515 670 L 555 750 L 590 710 H 710"
-            fill="none" stroke="#000" stroke-width="50" stroke-linecap="square" stroke-linejoin="miter"/>
+      <g transform="translate(35 11.75) scale(4.65)">
+        <rect x="62" y="104" width="76" height="24" rx="9" fill="#000"/>
+        <rect x="84" y="146" width="32" height="8" rx="4" fill="#000"/>
+      </g>
     </mask>
   </defs>
 
@@ -19,9 +17,10 @@
   <rect width="1000" height="1000" fill="url(#nt-bg)"/>
 
   <g fill="#D8FF3E" mask="url(#nt-avatar-face)">
-    <path d="M280 300 L 220 80 L 440 220 Z"/>
-    <path d="M720 300 L 780 80 L 560 220 Z"/>
-    <rect x="200" y="260" width="600" height="630" rx="100"/>
+    <g transform="translate(35 11.75) scale(4.65)">
+      <path d="M50 98 L 60 40 L 74 88 L 88 34 L 102 86 L 116 40 L 130 88 L 142 48 L 152 98 Z"/>
+      <circle cx="100" cy="118" r="58"/>
+    </g>
   </g>
 
   <g fill="#8E8E86">
