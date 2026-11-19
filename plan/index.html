@@ -1,0 +1,768 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>NULLTONE — operating plan</title>
+<meta name="theme-color" content="#08090A">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #08090a;
+    --ink-2: #0d0f10;
+    --bone: #ede9e3;
+    --muted: #8e8e86;
+    --lime: #d8ff3e;
+    --coral: #ff6a3d;
+    --line: rgba(237, 233, 227, 0.14);
+    --line-strong: rgba(237, 233, 227, 0.3);
+    --pad: clamp(1.1rem, 3.4vw, 3.25rem);
+    --display: "Anton", Impact, "Arial Narrow", sans-serif;
+    --sans: "Inter Tight", ui-sans-serif, system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+    --mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--ink);
+    color: var(--bone);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; }
+  p { margin: 0; }
+  h1, h2, h3 { margin: 0; font-family: var(--display); font-weight: 400; text-transform: uppercase; line-height: 0.92; letter-spacing: 0.012em; }
+  :focus-visible { outline: 2px solid var(--lime); outline-offset: 3px; }
+
+  .mono {
+    font-family: var(--mono);
+    font-size: 0.6875rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 var(--pad); }
+
+  /* ── top bar ───────────────────────────────────────────── */
+  .bar {
+    position: sticky; top: 0; z-index: 20;
+    background: rgba(8, 9, 10, 0.94);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--line);
+  }
+  .bar-in {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 1rem; padding: 0.75rem 0;
+  }
+  .bar-brand { display: flex; align-items: center; gap: 0.6rem; }
+  .bar-brand img { width: 22px; height: 22px; }
+  .bar-brand span {
+    font-family: var(--display); font-size: 1rem; letter-spacing: 0.04em; text-transform: uppercase;
+  }
+  .bar-progress { display: flex; align-items: center; gap: 0.7rem; }
+  .bar-track { width: 90px; height: 2px; background: var(--line); overflow: hidden; }
+  .bar-fill { height: 100%; width: 0; background: var(--lime); transition: width 0.3s ease; }
+  .bar-count { font-family: var(--mono); font-size: 0.6875rem; letter-spacing: 0.1em; color: var(--bone); }
+
+  /* ── intro ─────────────────────────────────────────────── */
+  .intro { padding: clamp(2.2rem, 6vw, 4.5rem) 0 clamp(1.4rem, 3vw, 2.2rem); }
+  .intro h1 {
+    font-size: clamp(2.6rem, 9vw, 5.6rem);
+    letter-spacing: -0.01em;
+    margin: 0.5rem 0 0;
+  }
+  .intro h1 em { font-style: normal; color: var(--lime); }
+  .intro .lede { max-width: 52ch; color: var(--bone); opacity: 0.82; margin-top: 1rem; }
+  .stats {
+    display: grid; grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1px; background: var(--line); border: 1px solid var(--line);
+    margin: clamp(1.6rem, 4vw, 2.4rem) 0 0;
+  }
+  .stat { background: var(--ink); padding: 0.9rem 1rem; display: flex; flex-direction: column; gap: 0.2rem; }
+  .stat b { font-family: var(--display); font-size: 1.5rem; font-weight: 400; letter-spacing: 0.01em; }
+  .stat b.lime { color: var(--lime); }
+  .stat span { font-family: var(--mono); font-size: 0.625rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); }
+
+  /* ── next up ───────────────────────────────────────────── */
+  .next {
+    border-top: 1px solid var(--line-strong);
+    border-bottom: 1px solid var(--line-strong);
+    padding: 1.1rem 0 1.25rem;
+    margin-bottom: clamp(1.8rem, 4vw, 3rem);
+  }
+  .next-head { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; margin-bottom: 0.85rem; }
+  .next-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 1px; background: var(--line); }
+  .next-list li {
+    background: var(--ink); padding: 0.7rem 0.9rem;
+    display: grid; grid-template-columns: auto 1fr auto; gap: 0.9rem; align-items: baseline;
+  }
+  .next-num { font-family: var(--mono); font-size: 0.6875rem; color: var(--lime); }
+  .next-title { font-weight: 500; }
+  .next-when { font-family: var(--mono); font-size: 0.625rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); white-space: nowrap; }
+
+  /* ── phases ────────────────────────────────────────────── */
+  .phase { margin-bottom: clamp(2rem, 5vw, 3.5rem); }
+  .phase-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 1rem; border-bottom: 1px solid var(--line-strong); padding-bottom: 0.7rem; }
+  .phase-title { display: flex; align-items: baseline; gap: 0.75rem; }
+  .phase-num { font-family: var(--mono); font-size: 0.75rem; letter-spacing: 0.18em; color: var(--lime); }
+  .phase h2 { font-size: clamp(1.5rem, 4.2vw, 2.1rem); }
+  .phase-meta { text-align: right; display: flex; flex-direction: column; gap: 0.15rem; }
+  .phase-meta .mono:last-child { color: var(--bone); }
+  .phase-gate { margin: 0.85rem 0 1rem; color: var(--muted); font-size: 0.9375rem; max-width: 62ch; }
+  .phase-gate b { color: var(--bone); font-weight: 500; }
+
+  .tasks { list-style: none; margin: 0; padding: 0; }
+  .task { border-top: 1px solid var(--line); }
+  .task:last-child { border-bottom: 1px solid var(--line); }
+  .task.done .task-title { text-decoration: line-through; text-decoration-thickness: 1px; color: var(--muted); }
+  .task.overdue .task-week { color: var(--coral); }
+  .task-label {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    gap: 0.9rem;
+    align-items: start;
+    padding: 0.85rem 0.2rem;
+    cursor: pointer;
+    position: relative;
+  }
+  .task-label:hover { background: rgba(237, 233, 227, 0.025); }
+  .task input[type="checkbox"] {
+    appearance: none; -webkit-appearance: none;
+    width: 18px; height: 18px; margin: 0.28rem 0 0;
+    border: 1px solid var(--line-strong);
+    background: transparent;
+    display: grid; place-items: center;
+    cursor: pointer;
+    flex: none;
+  }
+  .task input[type="checkbox"]:checked { background: var(--lime); border-color: var(--lime); }
+  .task input[type="checkbox"]:checked::after {
+    content: ""; width: 8px; height: 4px;
+    border-left: 2px solid var(--ink); border-bottom: 2px solid var(--ink);
+    transform: translateY(-1px) rotate(-45deg);
+  }
+  .task-body { display: flex; flex-direction: column; gap: 0.15rem; min-width: 0; }  .task-title { font-weight: 500; font-size: 1rem; }
+  .task-detail { color: var(--muted); font-size: 0.875rem; max-width: 70ch; }
+  .task-meta { display: flex; align-items: center; flex-wrap: wrap; gap: 0.6rem; padding-top: 0.15rem; min-width: 0; }
+  .task-week { font-family: var(--mono); font-size: 0.625rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); white-space: nowrap; }
+  .effort {
+    font-family: var(--mono); font-size: 0.5625rem; letter-spacing: 0.1em;
+    border: 1px solid var(--line); padding: 0.1rem 0.3rem; color: var(--muted);
+  }
+  .effort--l { border-color: rgba(216, 255, 62, 0.4); color: var(--lime); }
+
+  /* ── weekly rhythm ─────────────────────────────────────── */
+  .rhythm { border: 1px solid var(--line-strong); padding: clamp(1.1rem, 3vw, 1.8rem); margin-bottom: clamp(2rem, 5vw, 3rem); }
+  .rhythm h2 { font-size: clamp(1.4rem, 4vw, 1.9rem); margin-bottom: 0.4rem; }
+  .rhythm > p { color: var(--muted); max-width: 60ch; font-size: 0.9375rem; }
+  .counters { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); margin: 1.2rem 0 0; }
+  .counter { background: var(--ink); padding: 0.8rem 0.9rem; }
+  .counter label { display: block; font-family: var(--mono); font-size: 0.625rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.35rem; }
+  .counter-row { display: flex; align-items: baseline; gap: 0.35rem; }
+  .counter input {
+    width: 100%; background: transparent; border: 0; border-bottom: 1px solid var(--line);
+    color: var(--bone); font-family: var(--display); font-size: 1.4rem; padding: 0 0 0.15rem;
+  }
+  .counter input:focus { border-color: var(--lime); outline: none; }
+  .counter-target { font-family: var(--mono); font-size: 0.625rem; color: var(--muted); }
+  .notes-label { display: block; margin-top: 1.2rem; font-family: var(--mono); font-size: 0.625rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); }
+  .notes {
+    width: 100%; min-height: 5.5rem; margin-top: 0.4rem; resize: vertical;
+    background: var(--ink-2); border: 1px solid var(--line); color: var(--bone);
+    font-family: var(--sans); font-size: 0.9375rem; padding: 0.7rem 0.8rem;
+  }
+  .notes:focus { outline: none; border-color: var(--lime); }
+  .questions { list-style: none; margin: 1.2rem 0 0; padding: 0; display: grid; gap: 0.35rem; }
+  .questions li { color: var(--muted); font-size: 0.9375rem; padding-left: 1.2rem; position: relative; }
+  .questions li::before { content: "—"; position: absolute; left: 0; color: var(--lime); }
+
+  /* ── scorecard ─────────────────────────────────────────── */
+  .score h2 { font-size: clamp(1.4rem, 4vw, 1.9rem); margin-bottom: 0.9rem; }
+  .score table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+  .score th, .score td { text-align: left; padding: 0.6rem 0.4rem; border-bottom: 1px solid var(--line); font-size: 0.9375rem; overflow-wrap: break-word; }
+  .score th { font-family: var(--mono); font-size: 0.625rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); font-weight: 400; }
+  .score td.actual { width: 80px; }
+  .score input {
+    width: 100%; background: transparent; border: 0; border-bottom: 1px solid var(--line);
+    color: var(--lime); font-family: var(--mono); font-size: 0.875rem; padding: 0.15rem 0;
+  }
+  .score input:focus { outline: none; border-color: var(--lime); }
+  .score td.target { font-family: var(--mono); font-size: 0.8125rem; color: var(--bone); width: 64px; }
+
+  /* ── footer ────────────────────────────────────────────── */
+  .foot {
+    border-top: 1px solid var(--line); margin-top: clamp(2rem, 5vw, 3rem);
+    padding: 1.4rem 0 clamp(2rem, 6vw, 4rem);
+    display: flex; flex-wrap: wrap; gap: 0.6rem; align-items: center; justify-content: space-between;
+  }
+  .tools { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .btn {
+    background: transparent; color: var(--bone); cursor: pointer;
+    border: 1px solid var(--line-strong); padding: 0.45rem 0.75rem;
+    font-family: var(--mono); font-size: 0.625rem; letter-spacing: 0.12em; text-transform: uppercase;
+  }
+  .btn:hover { border-color: var(--lime); color: var(--lime); }
+  .btn--solid { background: var(--lime); color: var(--ink); border-color: var(--lime); }
+  .btn--solid:hover { background: transparent; color: var(--lime); }
+  .saved { font-family: var(--mono); font-size: 0.625rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+
+  @media (max-width: 720px) {
+    .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .counters { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .task-label { grid-template-columns: auto minmax(0, 1fr); }
+    .task-meta { grid-column: 2; }
+    .task-week { white-space: normal; }
+    .phase-head { flex-direction: column; align-items: flex-start; gap: 0.35rem; }
+    .phase-meta { text-align: left; flex-direction: row; gap: 0.5rem; }
+    .next-list li { grid-template-columns: auto minmax(0, 1fr); }
+    .next-when { grid-column: 2; }
+    .next-title { overflow-wrap: anywhere; }
+    .bar-track { width: 54px; }
+  }
+
+  @media print {
+    body { background: #fff; color: #000; font-size: 11pt; }
+    .bar, .tools, .next, .foot .mono { display: none; }
+    .wrap { max-width: none; padding: 0; }
+    .phase, .rhythm, .score { break-inside: auto; }
+    .task { break-inside: avoid; }
+    .stat, .counter, .next-list li { background: #fff; }
+    .stat b, .phase-num, .questions li::before { color: #000; }
+    .task-detail, .phase-gate, .questions li { color: #333; }
+    .task input[type="checkbox"] { border: 1px solid #000; }
+    a[href]::after { content: ""; }
+  }
+</style>
+</head>
+<body>
+
+<div class="bar">
+  <div class="wrap bar-in">
+    <div class="bar-brand">
+      <img src="../assets/mark.svg" alt="">
+      <span>Operating plan</span>
+    </div>
+    <div class="bar-progress">
+      <div class="bar-track"><div class="bar-fill" id="barFill"></div></div>
+      <span class="bar-count" id="barCount">0%</span>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <section class="intro">
+    <p class="mono">NULLTONE — 13 weeks to a paid booking</p>
+    <h1>Get it <em>off the ground.</em></h1>
+    <p class="lede">Three phases, one gate each. Work top to bottom: the tasks are ordered so nothing asks for a thing you don't have yet. Progress saves in this browser — export a backup before you clear it.</p>
+
+    <div class="stats">
+      <div class="stat"><b id="statWeek">Week 1</b><span>of 13</span></div>
+      <div class="stat"><b id="statDone">0/0</b><span>tasks done</span></div>
+      <div class="stat"><b class="lime" id="statNext">—</b><span>current phase</span></div>
+      <div class="stat"><b id="statEnd">—</b><span>day 90</span></div>
+    </div>
+  </section>
+
+  <section class="next" aria-labelledby="nextHead">
+    <div class="next-head">
+      <p class="mono" id="nextHead">Do next</p>
+      <p class="mono" id="nextCount"></p>
+    </div>
+    <ul class="next-list" id="nextList"></ul>
+  </section>
+
+  <main id="phases"></main>
+
+  <section class="rhythm" aria-labelledby="rhythmHead">
+    <p class="mono">The weekly rhythm</p>
+    <h2 id="rhythmHead">Ten hours a week.</h2>
+    <p>Three posts, five DMs, two nights out, one set. Counters reset every Monday — the numbers are the commitment, not the ambition.</p>
+
+    <div class="counters" id="counters"></div>
+
+    <label class="notes-label" for="notes">Sunday check-in — what did you finish, what's the next deadline you've told someone else about?</label>
+    <textarea class="notes" id="notes" placeholder="Finished the arrangement on Track A. Told the promoter about the 14th."></textarea>
+
+    <ul class="questions">
+      <li>Did I finish something this week — a track, a mix, a clip, an email?</li>
+      <li>Did I send five DMs to people who book or play?</li>
+      <li>Did I go out twice, and talk to the person who runs the night?</li>
+      <li>If 1 or 2 has been no for two weeks, cut something else. The plan isn't the problem.</li>
+    </ul>
+  </section>
+
+  <section class="score" aria-labelledby="scoreHead">
+    <p class="mono">Day 90 — the only numbers that matter</p>
+    <h2 id="scoreHead">Scorecard</h2>
+    <table>
+      <thead>
+        <tr><th>Metric</th><th>Actual</th><th>Target</th></tr>
+      </thead>
+      <tbody id="scoreBody"></tbody>
+    </table>
+  </section>
+
+  <footer class="foot">
+    <div class="tools">
+      <button class="btn btn--solid" id="btnPrint" type="button">Print checklist</button>
+      <button class="btn" id="btnExport" type="button">Export backup</button>
+      <button class="btn" id="btnImport" type="button">Import</button>
+      <input type="file" id="fileInput" accept="application/json" hidden>
+      <button class="btn" id="btnReset" type="button">Reset</button>
+    </div>
+    <span class="saved" id="saved">Saved locally</span>
+  </footer>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  var START = "2026-11-18";
+  var WEEKS = 13;
+  var KEY = "nulltone.plan.v1";
+
+  var PHASES = [
+    {
+      id: "p1", num: "01", name: "Build the assets", weeks: "Weeks 1–4",
+      gate: "<b>Gate:</b> two finished tracks, one 30–45 minute mix, three photos. If this gate isn't closed, nothing in phase 02 works."
+    },
+    {
+      id: "p2", num: "02", name: "Get in the room", weeks: "Weeks 5–8",
+      gate: "<b>Gate:</b> three sets played, footage from each, five promoters who know your name. This phase is physical, not online."
+    },
+    {
+      id: "p3", num: "03", name: "Turn proof into money", weeks: "Weeks 9–13",
+      gate: "<b>Gate:</b> one paid booking, a reusable press kit, and a release cadence you can keep running."
+    }
+  ];
+
+  var TASKS = [
+    { id: "lane", p: "p1", w: 1, e: "S", t: "Pick your lane and write it down",
+      d: "Bass/breaks, house, techno or open format. One sentence, saved somewhere you'll see it. Every post and DM for 13 weeks points at it." },
+    { id: "ig", p: "p1", w: 1, e: "S", t: "Finish the Instagram account",
+      d: "Confirm @nulltone.wav is yours, display name NULLTONE, avatar-1000.png, bio option A from the kit, link to the site, five highlight covers." },
+    { id: "match", p: "p1", w: 1, e: "S", t: "Make every live account match",
+      d: "SoundCloud, YouTube and Instagram: same avatar, same display name, same one-line bio, each linking to the site." },
+    { id: "photos", p: "p1", w: 1, e: "M", t: "Shoot the photo set",
+      d: "The five-shot list in the brand guide. One hard light, black room, no smiling at the camera. Phone is fine — three usable frames is the goal." },
+    { id: "arrA", p: "p1", w: 2, e: "L", t: "Finish the arrangement on Track A",
+      d: "Finished, not perfect. Intro and outro DJ-friendly, one idea, nothing decorative. Stop when it's done, not when it's better." },
+    { id: "mixA", p: "p1", w: 2, e: "M", t: "Mix Track A on three systems",
+      d: "Monitors, a phone speaker, and a car. If the low end survives all three, it's mixed. Check for clipping before it leaves the room." },
+    { id: "masterA", p: "p1", w: 2, e: "S", t: "Send Track A to be mastered",
+      d: "A $50–80 engineer, or a friend who knows what they're doing. Booked before the weekend so the turnaround doesn't slip the date." },
+    { id: "artA", p: "p1", w: 3, e: "S", t: "Cut the cover art from the template",
+      d: "1340×1340, Void background, one lime or coral geometric element, wordmark at 8% height, no title in the image." },
+    { id: "arrB", p: "p1", w: 3, e: "L", t: "Finish the arrangement on Track B",
+      d: "The second record is what proves the first wasn't a fluke. Same discipline: one idea, built from the kick and the sub up." },
+    { id: "mixRec", p: "p1", w: 3, e: "M", t: "Record the 30–45 minute mix in one take",
+      d: "No edits, no retakes. Write the tracklist as you go — a promoter reads the tracklist before they press play." },
+    { id: "date", p: "p1", w: 4, e: "S", t: "Set the release date and say it out loud",
+      d: "A date on the site, in the bio, in a story. Announced dates are what turn a folder of demos into a deadline." },
+    { id: "distro", p: "p1", w: 4, e: "S", t: "Distribute Track A",
+      d: "DistroKid or Amuse. Metadata, ISRC, artwork specs, artist name NULLTONE, © line. Upload early — review takes days, not hours." },
+    { id: "preSend", p: "p1", w: 4, e: "M", t: "Send Track A to 10 DJs and 3 radio shows first",
+      d: "Before it's public. A private [untitled] project link or a private SoundCloud link. People play what they got early." },
+    { id: "relA", p: "p1", w: 4, e: "M", t: "Release Track A and post the first nine tiles",
+      d: "Release day post, clip, then the story behind it. Pinned type card last, so the grid reads correctly from the bottom up." },
+
+    { id: "pubMix", p: "p2", w: 5, e: "S", t: "Publish the mix to SoundCloud and YouTube",
+      d: "SoundCloud first, with the tracklist in the description. YouTube chaptered per track. Link both from the site's Listen cards." },
+    { id: "map", p: "p2", w: 5, e: "M", t: "Map the local scene",
+      d: "Fifteen nights, venues and promoters in your lane, with the name of the person who books each one. A list you can work, not a vibe." },
+    { id: "out1", p: "p2", w: 5, e: "M", t: "Go out twice and meet the booker",
+      d: "Not to network — to be a face. Arrive early, stay late, thank the person who ran it. No pitch on the first night." },
+    { id: "dm5", p: "p2", w: 6, e: "S", t: "Send five pitch DMs from the template",
+      d: "Promoters, radio hosts, DJs you actually rate. One link, one sentence about the room, one ask. Nothing attached." },
+    { id: "set1", p: "p2", w: 6, e: "L", t: "Play one set anywhere and film it",
+      d: "House party, friend's bar, radio slot. Free is fine — footage is the payment. One 15-second vertical clip from behind the booth." },
+    { id: "follow", p: "p2", w: 7, e: "S", t: "Follow up once, then stop",
+      d: "Seven days later, one line. Silence is a queue, not a rejection. Two follow-ups reads as pressure." },
+    { id: "set2", p: "p2", w: 7, e: "L", t: "Play set two in a real room",
+      d: "Know your first three tracks and your last one. Bring a backup USB and a cable you've tested. Get the clip and the crowd audio." },
+    { id: "kit", p: "p2", w: 8, e: "M", t: "Build the one-page press kit",
+      d: "150-word bio, three photos, two links, one line on what you play, a fee range. One PDF, under 2 MB, named NULLTONE-press-kit.pdf." },
+    { id: "roomAudio", p: "p2", w: 8, e: "S", t: "Capture the room for mix two",
+      d: "Record a set live, crowd noise included. That recording beats any studio mix as proof you can hold a room." },
+
+    { id: "relB", p: "p3", w: 9, e: "M", t: "Release Track B on the same cadence",
+      d: "Four to six weeks after A. Same pipeline, half the effort now that the process exists. Reuse the cover template." },
+    { id: "mix2", p: "p3", w: 9, e: "M", t: "Publish mix two, recorded live",
+      d: "The room version, unedited. Upload to SoundCloud and YouTube, then put it in every booking email from here on." },
+    { id: "reel", p: "p3", w: 10, e: "M", t: "Cut the 45-second showreel",
+      d: "Three rooms, one drop each, the mark at the end. Vertical and landscape cuts. This is the first thing a promoter watches." },
+    { id: "domain", p: "p3", w: 10, e: "S", t: "Buy nulltone.audio and point the site at it",
+      d: "Then update og:url, the og/twitter image URLs, the footer and every bio link. Keep the github.io address redirecting." },
+    { id: "send10", p: "p3", w: 11, e: "M", t: "Send ten booking emails",
+      d: "Reel, mix, kit, fee range, and a specific night you're asking about. Ten is the number where one reply is normal." },
+    { id: "fee", p: "p3", w: 12, e: "S", t: "Set the fee ladder",
+      d: "Free → $150 → $300 → $600. Move up after a room that went well. Give a range and a reason, never an apology." },
+    { id: "paid", p: "p3", w: 12, e: "L", t: "Land the first paid booking",
+      d: "Confirmed date, agreed fee, deposit if they offer one. Then get the flyer, the set time and the load-in details in writing." },
+    { id: "review", p: "p3", w: 13, e: "S", t: "Run the day-90 review",
+      d: "Fill the scorecard below. Keep what worked, delete what didn't, and set the next 13 weeks from the same three phases." }
+  ];
+
+  var COUNTERS = [
+    { id: "posts", label: "Posts", target: 3 },
+    { id: "dms", label: "DMs sent", target: 5 },
+    { id: "nights", label: "Nights out", target: 2 },
+    { id: "sets", label: "Sets played", target: 1 }
+  ];
+
+  var METRICS = [
+    { id: "tracks", label: "Released tracks", target: 2 },
+    { id: "mixes", label: "Mixes published", target: 2 },
+    { id: "gigs", label: "Live sets played", target: 3 },
+    { id: "promoters", label: "Promoter relationships", target: 5 },
+    { id: "plays", label: "SoundCloud plays", target: 1000 },
+    { id: "followers", label: "Instagram followers (vanity)", target: 500 },
+    { id: "bookings", label: "Paid bookings", target: 1 }
+  ];
+
+  var DAY = 86400000;
+  var startDate = new Date(START + "T00:00:00");
+
+  var state = { done: {}, counters: {}, metrics: {}, notes: "" };
+
+  function load() {
+    try {
+      var raw = localStorage.getItem(KEY);
+      if (!raw) return;
+      var parsed = JSON.parse(raw);
+      if (parsed && typeof parsed === "object") {
+        state.done = parsed.done || {};
+        state.counters = parsed.counters || {};
+        state.metrics = parsed.metrics || {};
+        state.notes = typeof parsed.notes === "string" ? parsed.notes : "";
+      }
+    } catch (err) {
+      /* corrupt or unavailable storage: run from a clean state */
+    }
+  }
+
+  function save() {
+    try {
+      localStorage.setItem(KEY, JSON.stringify(state));
+      flashSaved();
+    } catch (err) {
+      var el = document.getElementById("saved");
+      if (el) el.textContent = "Couldn't save — export a backup";
+    }
+  }
+
+  var savedTimer = null;
+  function flashSaved() {
+    var el = document.getElementById("saved");
+    if (!el) return;
+    el.textContent = "Saved";
+    clearTimeout(savedTimer);
+    savedTimer = setTimeout(function () { el.textContent = "Saved locally"; }, 1200);
+  }
+
+  function fmtDate(d) {
+    var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    return d.getDate() + " " + months[d.getMonth()];
+  }
+
+  function weekStart(w) { return new Date(startDate.getTime() + (w - 1) * 7 * DAY); }
+  function weekEnd(w) { return new Date(startDate.getTime() + (w * 7 - 1) * DAY); }
+  function weekLabel(w) { return fmtDate(weekStart(w)) + " – " + fmtDate(weekEnd(w)); }
+
+  function currentWeek() {
+    var today = new Date();
+    today.setHours(0, 0, 0, 0);
+    var n = Math.floor((today.getTime() - startDate.getTime()) / (7 * DAY)) + 1;
+    return Math.max(1, Math.min(WEEKS, n));
+  }
+
+  function phaseOf(task) {
+    for (var i = 0; i < PHASES.length; i++) if (PHASES[i].id === task.p) return PHASES[i];
+    return PHASES[0];
+  }
+
+  function el(tag, cls, text) {
+    var n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (text != null) n.textContent = text;
+    return n;
+  }
+
+  function progress() {
+    var total = TASKS.length;
+    var done = 0;
+    for (var i = 0; i < TASKS.length; i++) if (state.done[TASKS[i].id]) done++;
+    return { done: done, total: total, pct: total ? Math.round((done / total) * 100) : 0 };
+  }
+
+  function renderPhases() {
+    var host = document.getElementById("phases");
+    host.textContent = "";
+    var cw = currentWeek();
+
+    PHASES.forEach(function (phase) {
+      var tasks = TASKS.filter(function (t) { return t.p === phase.id; });
+      var done = tasks.filter(function (t) { return state.done[t.id]; }).length;
+
+      var section = el("section", "phase");
+      section.setAttribute("aria-labelledby", "h-" + phase.id);
+
+      var head = el("div", "phase-head");
+      var titleWrap = el("div", "phase-title");
+      titleWrap.appendChild(el("span", "phase-num", phase.num));
+      var h2 = el("h2", null, phase.name);
+      h2.id = "h-" + phase.id;
+      titleWrap.appendChild(h2);
+      head.appendChild(titleWrap);
+
+      var meta = el("div", "phase-meta");
+      meta.appendChild(el("span", "mono", phase.weeks));
+      meta.appendChild(el("span", "mono", done + "/" + tasks.length + " done"));
+      head.appendChild(meta);
+      section.appendChild(head);
+
+      var gate = el("p", "phase-gate");
+      gate.innerHTML = phase.gate;
+      section.appendChild(gate);
+
+      var list = el("ul", "tasks");
+      tasks.forEach(function (task) {
+        var isDone = !!state.done[task.id];
+        var li = el("li", "task" + (isDone ? " done" : "") + (!isDone && task.w < cw ? " overdue" : ""));
+        var label = el("label", "task-label");
+
+        var box = document.createElement("input");
+        box.type = "checkbox";
+        box.checked = isDone;
+        box.id = "t-" + task.id;
+        box.addEventListener("change", function () {
+          if (box.checked) state.done[task.id] = true;
+          else delete state.done[task.id];
+          save();
+          refresh();
+        });
+        label.appendChild(box);
+
+        var body = el("div", "task-body");
+        var title = el("span", "task-title", task.t);
+        body.appendChild(title);
+        if (task.d) body.appendChild(el("span", "task-detail", task.d));
+        label.appendChild(body);
+
+        var metaWrap = el("div", "task-meta");
+        metaWrap.appendChild(el("span", "task-week", "Wk " + task.w + " · " + weekLabel(task.w)));
+        var effort = el("span", "effort" + (task.e === "L" ? " effort--l" : ""), task.e === "S" ? "quick" : task.e === "M" ? "session" : "block");
+        metaWrap.appendChild(effort);
+        label.appendChild(metaWrap);
+
+        li.appendChild(label);
+        list.appendChild(li);
+      });
+
+      section.appendChild(list);
+      host.appendChild(section);
+    });
+  }
+
+  function renderNext() {
+    var cw = currentWeek();
+    var open = TASKS.filter(function (t) { return !state.done[t.id]; });
+    open.sort(function (a, b) { return a.w - b.w; });
+    var host = document.getElementById("nextList");
+    host.textContent = "";
+
+    var countEl = document.getElementById("nextCount");
+    if (countEl) countEl.textContent = open.length + " open";
+
+    if (!open.length) {
+      var empty = el("li", null, "");
+      empty.appendChild(el("span", "next-num", "✓"));
+      empty.appendChild(el("span", "next-title", "All thirteen weeks closed. Run the day-90 review and set the next block."));
+      empty.appendChild(el("span", "next-when", ""));
+      host.appendChild(empty);
+      return;
+    }
+
+    open.slice(0, 3).forEach(function (task, i) {
+      var li = el("li");
+      li.appendChild(el("span", "next-num", "0" + (i + 1)));
+      li.appendChild(el("span", "next-title", task.t));
+      var when = task.w < cw ? "Overdue · wk " + task.w : task.w === cw ? "This week" : "Wk " + task.w + " · " + fmtDate(weekStart(task.w));
+      li.appendChild(el("span", "next-when", when));
+      host.appendChild(li);
+    });
+  }
+
+  function renderCounters() {
+    var host = document.getElementById("counters");
+    host.textContent = "";
+    COUNTERS.forEach(function (c) {
+      var wrap = el("div", "counter");
+      var label = el("label", null, c.label);
+      label.setAttribute("for", "c-" + c.id);
+      wrap.appendChild(label);
+
+      var row = el("div", "counter-row");
+      var input = document.createElement("input");
+      input.type = "number";
+      input.min = "0";
+      input.step = "1";
+      input.inputMode = "numeric";
+      input.id = "c-" + c.id;
+      input.value = state.counters[c.id] != null ? state.counters[c.id] : "";
+      input.placeholder = "0";
+      input.addEventListener("input", function () {
+        var v = parseInt(input.value, 10);
+        if (isNaN(v) || v === 0) delete state.counters[c.id];
+        else state.counters[c.id] = v;
+        save();
+      });
+      row.appendChild(input);
+      row.appendChild(el("span", "counter-target", "/ " + c.target + " a week"));
+      wrap.appendChild(row);
+      host.appendChild(wrap);
+    });
+  }
+
+  function renderScore() {
+    var body = document.getElementById("scoreBody");
+    body.textContent = "";
+    METRICS.forEach(function (m) {
+      var tr = document.createElement("tr");
+      tr.appendChild(el("td", null, m.label));
+
+      var actual = document.createElement("td");
+      actual.className = "actual";
+      var input = document.createElement("input");
+      input.type = "number";
+      input.min = "0";
+      input.step = "1";
+      input.inputMode = "numeric";
+      input.setAttribute("aria-label", m.label + " — actual");
+      input.value = state.metrics[m.id] != null ? state.metrics[m.id] : "";
+      input.placeholder = "—";
+      input.addEventListener("input", function () {
+        var v = parseInt(input.value, 10);
+        if (isNaN(v)) delete state.metrics[m.id];
+        else state.metrics[m.id] = v;
+        save();
+      });
+      actual.appendChild(input);
+      tr.appendChild(actual);
+
+      tr.appendChild(el("td", "target", String(m.target)));
+      body.appendChild(tr);
+    });
+  }
+
+  function renderStats() {
+    var p = progress();
+    var cw = currentWeek();
+    document.getElementById("statWeek").textContent = "Week " + cw;
+    document.getElementById("statDone").textContent = p.done + "/" + p.total;
+
+    var phase = PHASES[PHASES.length - 1];
+    for (var j = 0; j < PHASES.length; j++) {
+      if (TASKS.some(function (t) { return t.p === PHASES[j].id && !state.done[t.id]; })) { phase = PHASES[j]; break; }
+    }
+    document.getElementById("statNext").textContent = phase.num;
+
+    var end = new Date(startDate.getTime() + 90 * DAY);
+    document.getElementById("statEnd").textContent = fmtDate(end);
+
+    document.getElementById("barFill").style.width = p.pct + "%";
+    document.getElementById("barCount").textContent = p.pct + "%";
+  }
+
+  function refresh() {
+    renderStats();
+    renderNext();
+    renderPhases();
+  }
+
+  function exportBackup() {
+    var payload = { exported: new Date().toISOString(), plan: "nulltone", state: state };
+    var blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement("a");
+    a.href = url;
+    a.download = "nulltone-plan-" + new Date().toISOString().slice(0, 10) + ".json";
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    setTimeout(function () { URL.revokeObjectURL(url); }, 1000);
+  }
+
+  function importBackup(file) {
+    var reader = new FileReader();
+    reader.onload = function () {
+      try {
+        var parsed = JSON.parse(String(reader.result));
+        var incoming = parsed && parsed.state ? parsed.state : parsed;
+        if (!incoming || typeof incoming !== "object") throw new Error("bad file");
+        state.done = incoming.done || {};
+        state.counters = incoming.counters || {};
+        state.metrics = incoming.metrics || {};
+        state.notes = typeof incoming.notes === "string" ? incoming.notes : "";
+        document.getElementById("notes").value = state.notes;
+        save();
+        renderCounters();
+        renderScore();
+        refresh();
+        alert("Backup imported.");
+      } catch (err) {
+        alert("That file isn't a NULLTONE plan backup.");
+      }
+    };
+    reader.readAsText(file);
+  }
+
+  function bindTools() {
+    document.getElementById("btnPrint").addEventListener("click", function () { window.print(); });
+    document.getElementById("btnExport").addEventListener("click", exportBackup);
+
+    var fileInput = document.getElementById("fileInput");
+    document.getElementById("btnImport").addEventListener("click", function () { fileInput.click(); });
+    fileInput.addEventListener("change", function () {
+      if (fileInput.files && fileInput.files[0]) importBackup(fileInput.files[0]);
+      fileInput.value = "";
+    });
+
+    document.getElementById("btnReset").addEventListener("click", function () {
+      if (!confirm("Clear every tick, counter and scoreline? Export a backup first if you want this back.")) return;
+      state = { done: {}, counters: {}, metrics: {}, notes: "" };
+      try { localStorage.removeItem(KEY); } catch (err) {}
+      document.getElementById("notes").value = "";
+      renderCounters();
+      renderScore();
+      refresh();
+      flashSaved();
+    });
+
+    var notes = document.getElementById("notes");
+    notes.value = state.notes;
+    notes.addEventListener("input", function () {
+      state.notes = notes.value;
+      save();
+    });
+  }
+
+  load();
+  bindTools();
+  renderCounters();
+  renderScore();
+  refresh();
+})();
+</script>
+</body>
+</html>

@@ -201,6 +201,29 @@ From there, the next 90 days are the same loop with better inputs: bigger rooms,
 
 ---
 
+## Running it — start date, gates, tracker
+
+This plan is now dated. **Block one starts 18 November 2026 and ends 16 February 2027** (13 weeks, 90 days). Everything is sequenced from that Monday; if you start late, move the date rather than compressing the weeks.
+
+**The three gates.** Do not start the next phase because the calendar says so — start it because the gate is closed.
+
+| Phase | Weeks | Gate |
+| --- | --- | --- |
+| 01 Build the assets | 1–4 | Two finished tracks, one 30–45 min mix, three photos |
+| 02 Get in the room | 5–8 | Three sets played with footage from each, five promoter relationships |
+| 03 Turn proof into money | 9–13 | One paid booking, a reusable press kit, a release cadence |
+
+If a gate is still open at the end of its phase, repeat the phase. A week spent on a closed gate is wasted; a week spent on an open one is the whole job.
+
+**The tracker: `plan/index.html`.** Open `https://nulltoneaudio.github.io/plan/` and work from the top. It holds the same 31 tasks in the same order, with per-phase progress, a "do next" strip, the weekly counters and the day-90 scorecard. State saves in your browser, so export a backup if you switch devices or clear site data.
+
+**The weekly loop, ten hours:**
+
+- Mon — process post, 30 min. Wed — music post, 30 min. Sat — the room, 30 min.
+- 5 DMs a week, 20 min each including the reply.
+- Two nights out, one set anywhere.
+- Sunday, 5 min: the check-in below, counters updated in the tracker.
+
 ## The weekly check-in
 
 Every Sunday, five minutes, answer these:

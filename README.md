@@ -20,6 +20,7 @@ brand/brand-guide.md    name, positioning, voice, visuals, bios, 30-day plan
 brand/bio-kit.md        paste-ready bios and avatar rules for every platform
 instagram/              handle, bios, launch grid, captions, reels, posting schedule
 strategy/launch-plan.md the 90-day path from no releases to paid bookings
+plan/index.html         13-week tracker — tick tasks, counters, scorecard (saves locally)
 ```
 
 No build step. Fonts come from Google Fonts, Three.js from a CDN; if either fails the page still renders and reads normally.
@@ -47,6 +48,14 @@ Tuning lives in the fragment shader: `t = uTime * 0.11` sets speed, `r * 26.0` s
 5. **Domain** — served from `nulltoneaudio.github.io`. `nulltoneaudio.com` belongs to someone else; `nulltone.audio` and `nulltone.fm` are unregistered.
 
 Booking email: `nulltone@icloud.com`.
+
+## The plan
+
+The sequence lives in `strategy/launch-plan.md`; the day-to-day tracker is `plan/index.html`.
+
+Open it at **https://nulltoneaudio.github.io/plan/** (unlisted — `noindex`, not linked from the site) or serve the repo and go to `/plan/`. Progress is stored in that browser under `nulltone.plan.v1`, so it's per-device: tick on your phone, on your laptop, separately. Hit **Export backup** if you're switching devices or clearing site data, and **Import** on the other one.
+
+Tasks are ordered by week, derived from a 13-week block starting 18 Nov 2026. When the block ends, change `START` and the task list at the top of the script — the dates, current week and day-90 line all follow from it.
 
 ## Deploy
 
