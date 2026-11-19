@@ -15,6 +15,7 @@ assets/mark.svg         mohawk mark (07), visor + mouth slots
 assets/favicon.svg      same mark, visor enlarged for the browser tab
 assets/avatar.svg       avatar master (1000px canvas)
 assets/avatar-1000.png  upload-ready avatar for Instagram / YouTube / SoundCloud
+assets/og.png           1200×630 share card for link previews
 brand/brand-guide.md    name, positioning, voice, visuals, bios, 30-day plan
 brand/bio-kit.md        paste-ready bios and avatar rules for every platform
 instagram/              handle, bios, launch grid, captions, reels, posting schedule
@@ -42,7 +43,7 @@ Tuning lives in the fragment shader: `t = uTime * 0.11` sets speed, `r * 26.0` s
 1. **Hero copy** — the blurb says the first single is finishing; update it the day the track is out.
 2. **Listen cards** — SoundCloud, YouTube and Instagram point at the real accounts, booking is the fourth (`.listen` is a 4-up grid that folds to 2 and 1).
 3. **About** — two short paragraphs; the avatar doubles as the mark. Swap in a portrait only if it's better than the avatar at 120px.
-4. **Metadata** — add `assets/og.png` (1200×630) and an `og:image` tag, and set `og:url` once a domain is live.
+4. **Metadata** — `assets/og.png` and the OG / Twitter tags are in place; point `og:url` and both image URLs at the custom domain once one is connected.
 5. **Domain** — served from `nulltoneaudio.github.io`. `nulltoneaudio.com` belongs to someone else; `nulltone.audio` and `nulltone.fm` are unregistered.
 
 Booking email: `nulltone@icloud.com`.
